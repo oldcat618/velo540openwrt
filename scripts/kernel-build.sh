@@ -32,7 +32,7 @@ for p in kmod-igb kmod-itco-wdt kmod-i2c-i801 kmod-gpio-pca953x kmod-mdio-gpio k
 	 kmod-usb-storage-uas kmod-usb3 kmod-usb-xhci-pci-renesas kmod-hwmon-coretemp i2c-tools mdio-tools kmod-mdio-netlink ethtool tcpdump-mini gpiod-tools \
 	 kmod-usb-net-qmi-wwan kmod-rmnet kmod-usb-net-cdc-mbim kmod-usb-serial-option kmod-usb-acm modemmanager mwan3 \
 	 luci luci-ssl luci-proto-modemmanager luci-app-mwan3 luci-app-attendedsysupgrade luci-app-package-manager \
-	 kmod-ath10k-ct ath10k-firmware-qca988x-ct wpad-basic-mbedtls iw \
+	 kmod-ath10k-ct ath10k-firmware-qca988x-ct wpad-basic-mbedtls luci-i18n-base-zh-cn luci-theme-argon iw \
 	 python3 tailscale ser2net collectd collectd-mod-cpu collectd-mod-memory collectd-mod-load collectd-mod-interface \
 	 collectd-mod-ping collectd-mod-thermal collectd-mod-uptime collectd-mod-exec luci-app-statistics \
 	 curl kmod-usb-serial-ftdi kmod-usb-serial-cp210x kmod-usb-serial-pl2303 kmod-usb-serial-ch341 picocom kmod-leds-pca963x; do
