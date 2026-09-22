@@ -1,6 +1,6 @@
 RAMFS_COPY_BIN='grub-bios-setup grub-editenv'
 
-# Ç¿ÖÆÖ¸¶¨Éı¼¶Ä¿±ê´ÅÅÌ£¬Ä¬ÈÏ sdb£¬¿ÉÍ¨¹ı»·¾³±äÁ¿¸²¸Ç
+# å¼ºåˆ¶æŒ‡å®šå‡çº§ç›®æ ‡ç£ç›˜ï¼Œé»˜è®¤ sdbï¼Œå¯é€šè¿‡ç¯å¢ƒå˜é‡è¦†ç›–
 TARGET_DISK="${TARGET_DISK:-sdb}"
 
 find_partname_dev() {
@@ -107,7 +107,7 @@ platform_check_image() {
 		;;
 	esac
 
-	# Ç¿ÖÆÊ¹ÓÃÖ¸¶¨Ä¿±ê´ÅÅÌ
+	# å¼ºåˆ¶ä½¿ç”¨æŒ‡å®šç›®æ ‡ç£ç›˜
 	diskdev="${TARGET_DISK:-sdb}"
 	BOOTDEVICE="$diskdev"
 	[ -b "/dev/$diskdev" ] || {
@@ -141,7 +141,7 @@ platform_copy_config() {
 	# ONIE upgrade bundles sysupgrade.tgz into the installer itself.
 	is_onie_install && return 0
 
-	# Ö±½ÓÊ¹ÓÃÄ¿±ê´ÅÅÌµÄµÚÒ»¸ö·ÖÇø
+	# ç›´æ¥ä½¿ç”¨ç›®æ ‡ç£ç›˜çš„ç¬¬ä¸€ä¸ªåˆ†åŒº
 	partdev="${target_disk}1"
 	if [ -b "/dev/$partdev" ]; then
 		part_magic_fat "/dev/$partdev" && parttype=vfat
@@ -180,7 +180,7 @@ platform_do_upgrade() {
 		return $?
 	fi
 
-	# Ç¿ÖÆÊ¹ÓÃÖ¸¶¨Ä¿±ê´ÅÅÌ
+	# å¼ºåˆ¶ä½¿ç”¨æŒ‡å®šç›®æ ‡ç£ç›˜
 	diskdev="${TARGET_DISK:-sdb}"
 	BOOTDEVICE="$diskdev"
 	[ -b "/dev/$diskdev" ] || {
