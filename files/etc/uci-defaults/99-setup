@@ -23,14 +23,14 @@ uci commit zerotier
 
 /etc/init.d/zerotier restart
 
-uci set system.@system[0].hostname="OWRT"
+uci set system.@system[0].hostname="OoWRT"
 uci commit system
 sed -i '/DISTRIB_REVISION/d' /etc/openwrt_release
-echo "DISTRIB_REVISION='R26.9.19'" >> /etc/openwrt_release
+echo "DISTRIB_REVISION='R26.9.22'" >> /etc/openwrt_release
 sed -i '/DISTRIB_DESCRIPTION/d' /etc/openwrt_release
-echo "DISTRIB_DESCRIPTION='OWRT '" >> /etc/openwrt_release
+echo "DISTRIB_DESCRIPTION='OoWRT '" >> /etc/openwrt_release
 sed -i '/OPENWRT_RELEASE/d' /usr/lib/os-release
-echo 'OPENWRT_RELEASE="OWrt R26.9.19"' >> /usr/lib/os-release
+echo 'OPENWRT_RELEASE="OWrt R26.9.22"' >> /usr/lib/os-release
 rm -rf /tmp/luci-modulecache/
 rm -f /tmp/luci-indexcache
 
