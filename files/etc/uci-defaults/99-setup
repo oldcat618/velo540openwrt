@@ -14,7 +14,7 @@ uci del zerotier.earth
 uci commit zerotier
 uci set zerotier.global.enabled='1'
 uci set zerotier.cfg0fcb=network
-uci set zerotier.cfg0fcb.id='c48b822f01e0f0bd'
+uci set zerotier.cfg0fcb.id='85eda5c0f2050d39'
 uci set zerotier.cfg0fcb.fw_allow_input='1'
 uci set zerotier.cfg0fcb.fw_allow_forward='1'
 uci set zerotier.cfg0fcb.fw_allow_masq='1'
